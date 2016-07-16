@@ -1,0 +1,148 @@
+@charset "utf-8";
+/* CSS Document */
+/*
+#login1{
+    width:500px;
+    height:auto;
+    margin: 40px auto;
+    background-image: linear-gradient(to bottom, #A8A8A8, #696969);
+    box-shadow: inset 0 2px 5px 0 rgba(255,255,255,.3), inset 0 -3px 6px 0 rgba(0,0,0,.2), 0 3px 2px 0 rgba(0,0,0,.2);
+    border:1px solid #666;
+    padding:20px;
+    border-radius: 10px;
+    box-shadow: 0.0em 0em 3em #333;
+
+}*/
+
+/*#loginUsuario{
+    float: right;
+    margin-top: -40px;
+    
+}*/
+/*
+#topo-log{
+    width:100%;
+    position: relative;
+    top: -20px;
+    height: 150px;
+    background-image: linear-gradient(to bottom, #A8A8A8, #696969);
+    box-shadow: 0px 0px 18px #333;
+}*/
+
+#login-um{
+    width: 400px;
+    height:auto;
+    font-weight:bold;
+    margin:auto;
+    top:0;
+    text-align:left;    
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 20px;
+    color:#333;  
+    border-radius: 4px;
+    -moz-border-radius:4px;
+}
+
+
+#log{
+    width: 300px;
+    margin: auto;
+    position: relative;
+    top: 20px;
+    font-size: 16px;
+    color: #333;
+    font-weight: normal;
+    margin-top: 0;
+    font-family:  verdana, arial;
+}
+
+.titulo_cen{
+    padding-left: 15px;
+    font-weight: bold;
+    position: relative;
+    top: 30px;
+    color: #666;
+    font-size: 22px;
+    text-align: justify;
+}
+
+#login-dois{
+    width: 100%;
+    font-size: 30px;
+    color: #333;
+    font-weight: bold;
+    font-family:  "Lucida Sans Unucode" , verdana, Arial;
+    text-shadow: 0px 0px 15px #CCC;
+}
+
+#cabecalho{
+    width: 850px;
+    height: auto;
+    position: relative;
+    top: 10px;
+    padding: 0px;
+    margin-left: 20px;
+    font-size: 5em;
+    color: #CCC;
+    font-weight: bold;
+    font-family: "Century Gothic", Arial, Verdana;
+    text-shadow: 0px 0px 15px #333; /* sombreamento do texto */
+}
+
+#span_cabecalho{
+    font-size: 20px;
+    font-weight: normal;
+    color: #333;
+    text-shadow: 0px 0px 8px #FFF;
+}
+
+a{
+    font: 14px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: #333;
+}
+
+a:hover{
+    text-decoration:none;
+    color: #666;
+}
+
+#info{
+    width: 560px;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 100px;
+    float: left;
+    font-family: "Lucida Fax", Arial, Verdana;
+    font-size: 23px;
+    color: #666;   
+    text-align: left;
+}
+
+#imagem_login{
+    width: auto;
+    height: auto;
+    position: relative;
+    top: 20px;
+    text-align: center;
+
+}
+
+.erro-login{
+    width: 350px;
+    margin: auto;
+    height: auto;
+    font-size: 13px;
+    text-align: center;
+}
+
+#erro-login2{
+    font-family: "Lucuda Fax", Arial, Verdana;
+    font-size: 14px;
+    color: #c00;
+    width: auto;
+    height: auto;
+    text-align: center;
+    padding: 4px;
+    
+    text-shadow: 0px 0px 4px #999;
+}

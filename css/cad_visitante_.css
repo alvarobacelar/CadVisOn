@@ -1,0 +1,117 @@
+
+/* 
+   Todo css da tpl cad_visitante.tpl
+*/
+
+root { 
+    display: block;
+}
+
+#centralizar{
+    width:80%;
+    margin: auto;
+}
+
+.formata-texto{
+    padding: 20px;
+    font-family: Verdana, Arial, Lucida;
+}
+
+#destino{
+    font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size:11px;
+    color:#F00;
+}
+
+form {
+    padding:10px;
+    color:#333;
+    margin-top: 0;
+    font-family:"Lucida Sans Unicone", Arial, sans-serif;
+    color: #666;
+    font-size: 16px;
+}
+
+.fild_cad{
+    font-size: 16px;
+    font-family:"Lucida Sans Unicone", sans-serif, arial;
+    font-weight: bold;
+    border-radius: 10px;
+    -moz-border-radius:10px;
+}
+
+#form-cad{
+    width: auto;
+    height: auto;
+    float: left;
+    padding: 26px;
+    color: #333;
+    margin-left: 10px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    border:1px solid #C0C0C0;
+    box-shadow: inset 0 2px 5px 0 rgba(255,255,255,.3), inset 0 0px 10px 0 rgba(0,0,0,.2), 0 3px 2px 0 rgba(0,0,0,.2);
+}
+
+
+#form-pessoa-home{
+    width: 95%;
+    min-height: 400px;
+    height: auto;
+    margin: 10px auto;
+    padding: 8px;
+    color: #666; 
+    box-shadow: 0px 0px 10px #999;
+    border-radius: 10px;
+    -moz-border-radius:10px;
+}
+
+#form-pessoa{
+    width: 98%;
+    min-height: 400px;
+    height: auto;
+    margin: 10px auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    color: #333; 
+    border:1px solid #C0C0C0;
+    box-shadow: inset 0 2px 5px 0 rgba(255,255,255,.3), inset 0 0px 10px 0 rgba(0,0,0,.2), 0 3px 2px 0 rgba(0,0,0,.2);
+    border-radius: 8px;
+}
+
+#form-erro{
+    width: 70%;
+    height: auto;
+    padding: 15px;
+    color: #666;
+    text-align: center;
+    font-size: 25px;
+    margin: 60px auto;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 20px #666;
+    border-radius: 8px;
+    -moz-border-radius:8px;
+}
+
+#form-cad-ver{
+    width: 33%;
+    height: auto;
+    color: #333;
+    padding: 13px;
+    margin-left: 7px;
+    margin-bottom: 50px;
+    float: left;
+    border:1px solid #C0C0C0;
+    box-shadow: inset 0 2px 5px 0 rgba(255,255,255,.3), inset 0 0px 10px 0 rgba(0,0,0,.2), 0 3px 2px 0 rgba(0,0,0,.2);
+    border-radius: 8px;
+}
+
+#cadVisitadoModal{
+    padding: 15px;
+}
+
+#aviso{
+    margin: auto;
+    text-align: center;
+    color: #333;
+}
