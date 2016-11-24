@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2015-04-24 04:08:10
+<?php /* Smarty version Smarty-3.1.13, created on 2016-11-24 14:56:40
          compiled from "./templates/paginas/rel_nome_visitante.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:5148932455539b39a85e758-70779032%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '26cce2a2eeabf07bf7a402b01c5a912da542736f' => 
     array (
       0 => './templates/paginas/rel_nome_visitante.tpl',
-      1 => 1395543648,
+      1 => 1479910324,
       2 => 'file',
     ),
   ),
@@ -15,9 +15,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
-  'has_nocache_code' => false,
   'version' => 'Smarty-3.1.13',
   'unifunc' => 'content_5539b39a8d73a9_33467670',
+  'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_5539b39a8d73a9_33467670')) {function content_5539b39a8d73a9_33467670($_smarty_tpl) {?><div id="centralizar">
 

@@ -9,28 +9,17 @@
                 <h2 class="panel-title">Cadastrar Militar</h2>
             </div>
             <div class="panel-body">
-                <form action="include/controlles/cadastra_visitado.php" method="post" name="dados" onSubmit="return enviardados();" class="form-horizontal" role="form">
+                <form action="include/controlles/cadastra_visitado.php" method="post" name="dados" onSubmit="return enviardados();" class="form-group">
 
                     <input type="hidden" id="form" name="form" value="" />
 
                     <div class="aviso"> Os campos com (*) serão obrigatorios </div>
                     {$visitado} {* mostra mensagem caso o usuario foi cadstrado *}
 
-                    <div class="form-group form-group-sm">
-                        <label class="col-sm-2 control-label" for="inputNome">Nome* </label>
-                        <div class="col-sm-6">
-                            <input id="nome" name="nome" type="text" title="Nome do militar" value="" autocomplete="on" required placeholder="Ex: Sgt Ribamar" /><p/>
-                        </div>
-                    </div>
+                    Nome*<br>
+                    <input id="nome" name="nome" type="text" title="Nome do militar" value="" autocomplete="on" required placeholder="Ex: Sgt Ribamar" /><p/>
 
-
-                    <div class="form-group form-group-sm">
-                        <label class="col-sm-2 control-label" for="secao">Seção</label>
-                        <div class="col-sm-8">
-                            <input class="form-control" type="text" id="secao" name="secao" required="" placeholder="Ex: Seção de Informática">
-                        </div>
-                    </div>
-                    <!--
+                    Seção<br>
                     <select id="secao" name="secao" required title="Escolha a seção">
                         <option value="">Escolha a Seção</option>
                         <optgroup label="Seções">
@@ -75,7 +64,6 @@
 
 
                     </select><p />
-                    -->
 
                     <button type="submit" class="btn btn-lg btn-primary ">Cadastrar  <span class="glyphicon glyphicon-floppy-disk"></span></button>
                     <button type="button" class="btn btn-danger">Cancelar  <span class="glyphicon glyphicon-remove"></span></button>

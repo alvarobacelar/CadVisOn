@@ -281,14 +281,18 @@ class Main {
 
             // SE O CPF INFORMADO TIVER CADASTRADO MANDA O NOME DA PESSOA E O ID PARA UMA PAGINA DE CADASTRO DE VISITA
             if ($_SESSION["visi"] == "OK") {
-                
+                // FAZENDO A BUSCA DO NOME DE TODOS OS MILITARES CADASTRADOS
+                $visitado = new ManipulateData();
+                $visitado->selectVisitados();
+                while ($resultado = $visitado->fetch_object()) { // LOOP DE REPETIÇÃO PARA ADICIONAR OS VALORES A UMA ARRAY
+                    $nome[] = $resultado->visitado_nome;
+                    $smarty->assign("nome", $nome);
+                }
                 // FIM DA PESQUISA NO BANCO DE DADOS PARA MOSTRAR TODOS OS MILITARES CADASTRADOS
                 // RETORNA A SELEÇÃO EM UMA SESSION
                 $smarty->assign("local", "<a href='index.php'>Home</a> > <a href='cad_visita.php?var=cancela'>Verifica Visitante</a> > Cadastrar Visita"); // define o local onde o usuario está
                 $smarty->assign("idPessoa", $_SESSION["id_pessoa"]);
                 $smarty->assign("nomePessoa", $_SESSION["nomePessoa"]); // RECEBENDO A PESQUISA EM UMA SESSION
-                $smarty->assign("endereco", $_SESSION["endereco"]);
-                $smarty->assign("cidade", $_SESSION["cidade"]);
                 $smarty->assign("fotoVisitante", $_SESSION["filename"]);
                 $smarty->assign("conteudo", "paginas/cad_visita.tpl"); // CHAMA A PAGINA DE CADASTRO DE VISITA
 
@@ -309,7 +313,6 @@ class Main {
                     $smarty->assign("nomeVis", $nome_vis);
                     $smarty->assign("data", $data);
                     $smarty->assign("hora", $hora);
-                    
                     $smarty->assign("quemVis", $quemVis);
                     $smarty->assign("foto", $foto);
                 }
@@ -799,9 +802,7 @@ class Main {
             $estado[] = $obj->uf;
             $foto[] = $obj->foto;
             $telefone[] = $obj->telefone;
-            $identidade[] = $obj->rg;
-            $veiculo[] = $obj->veiculo;
-            $placa[] = $obj->placa;
+            $cpf[] = $obj->cpf;
 
             $smarty->assign("estado", $estado);
             $smarty->assign("foto", $foto);
@@ -809,9 +810,7 @@ class Main {
             $smarty->assign("nome", $nome);
             $smarty->assign("telefone", $telefone);
             $smarty->assign("id", $id);
-            $smarty->assign("identidade", $identidade);
-            $smarty->assign("veiculo", $veiculo);
-            $smarty->assign("placa", $placa);
+            $smarty->assign("cpf", $cpf);
         }
 
         // VERIFICA SE O USUÁRIO FOI CADASTRADO NO BANCO DE DADOS

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2015-08-13 23:32:52
+<?php /* Smarty version Smarty-3.1.13, created on 2016-11-24 14:45:20
          compiled from "./templates/layout.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:34924411255392353d61543-32499156%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '9e6b070c8cb75a2b091a59dcbc2131b5d5a97bf5' => 
     array (
       0 => './templates/layout.tpl',
-      1 => 1439519569,
+      1 => 1479910210,
       2 => 'file',
     ),
   ),
@@ -98,14 +98,16 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                                         <li><a href="log_acesso.php" title="Cadastrar Novo Usuário"> Log de Acesso </a></li>
                                     </ul>
                                 </li>
-                                <li><a href="cad_visita.php" title="Cadastrar Visitante"> Cadastrar Hospedagem </a></li>
-                                <li><a href="pessoas_cadastradas.php" title="Pessoas Cadastradas"> Hospedes Cadastradas </a></li>
+                                <li><a href="cad_visitado.php" title="Cadastrar Militar"> Cadastrar Militar </a></li>
+                                <li><a href="cad_visita.php" title="Cadastrar Visitante"> Cadastrar Visita </a></li>
+                                <li><a href="pessoas_cadastradas.php" title="Pessoas Cadastradas"> Pessoas Cadastradas </a></li>
                                 <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Relatorios de Hospedagem <b class="caret"></b></a>
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Relatorios de visita <b class="caret"></b></a>
                                     <ul class="dropdown-menu">
                                         <li><a href="gerarRelatorios.php?rel=diario" target="_blanck">Relatório Diário </a></li>
                                         <li><a href="gerarRelatorios.php?rel=data"> Por Data </a></li>
-                                        <li><a href="gerarRelatorios.php?rel=nome"> Por Nome do Hospede</a></li>
+                                        <li><a href="gerarRelatorios.php?rel=nome"> Por Nome do Visitante</a></li>
+                                        <li><a href="gerarRelatorios.php?rel=visitado"> Por Nome do Visitado </a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -238,14 +240,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li><a href="cad_visita.php" title="Cadastrar Visitante"><strong> Cadastrar Hospedagem </strong></a></li>
-                            <li><a href="pessoas_cadastradas.php" title="Pessoas Cadastradas"> Hospedes Cadastradas </a></li>
+                            <li><a href="cad_visita.php" title="Cadastrar Visitante"><strong> Cadastrar Visita </strong></a></li>
+                            <li><a href="pessoas_cadastradas.php" title="Pessoas Cadastradas"> Pessoas Cadastradas </a></li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Relatorios de Hospedagem <b class="caret"></b></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Relatorios de visita <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="gerarRelatorios.php?rel=diario" target="_blanck">Relatório Diário</a></li>
+                                    <li><a href="gerarRelatorios.php?rel=diario" target="_blanck">Relatório Diário </a></li>
                                     <li><a href="gerarRelatorios.php?rel=data"> Por Data </a></li>
-                                    <li><a href="gerarRelatorios.php?rel=nome"> Por Nome do Hospede</a></li>
+                                    <li><a href="gerarRelatorios.php?rel=nome"> Por Nome do Visitante</a></li>
+                                    <li><a href="gerarRelatorios.php?rel=visitado"> Por Nome do Visitado </a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -331,10 +334,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 
         <div id="rodapeHome">
-            © Pensão Genivaldo Geni - (Carreirinha) 
+            © CadVisiOn - Cadastro de Visitantes Online |  <a href="#"> Politica de Privacidade </a> | <a href="#"> Termo de Uso </a> | <a href="fale_conosco.php"> Fale Conosco </a>
             <p>
-                Desenvolvido por - <a href="http://www.alvarobacelar.com" target="_blank">Álvaro Bacelar</a><br>
-                Versão 2.0.1
+                Desenvolvido por - <a href="http://www.alvarobacelar.com" target="_blank">Sgt Álvaro</a> | Seção de Informática 25ºBC<br>
+                Versão 2.0
             </p>
         </div>
 

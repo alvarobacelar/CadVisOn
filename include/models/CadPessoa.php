@@ -17,8 +17,6 @@ class CadastraPessoa {
     private $email;
     private $observacao;
     private $foto;
-    private $veiculo;
-    private $placa;
 
     // FUNCAO QUE SETA TODOS AS VERIAVEIS CRIADAS ANTERIORMENTE
     function setVis($prop, $value) {
@@ -44,8 +42,6 @@ class CadastraPessoa {
         $email = $this->email;
         $obs = $this->observacao;
         $foto = $this->foto;
-        $veiculo = $this->veiculo;
-        $placa = $this->placa;
 
 
 
@@ -56,9 +52,9 @@ class CadastraPessoa {
         if ($db->getDadosDuplicados($cpf) == "0") {
 
             // SETANDO OS CAMPOS NO BANCO DE DADOS A SEREM INSERIDOS OS ATRIBUTOS
-            $db->setCamposBanco("nome, rg, sexo, cpf, cidade, uf, telefone, endereco, cep, bairro, numero, email, obs, foto, veiculo, placa");
+            $db->setCamposBanco("nome, rg, sexo, cpf, cidade, uf, telefone, endereco, cep, bairro, numero, email, obs, foto");
             // SETANDO OS VALORES A SEREM INSERIDOS NO BANCO DE DADOS
-            $db->setDados("'$nome','$rg','$sexo','$cpf','$cidade','$uf','$telefone','$endereco','$cep','$bairro','$numero','$email', '$obs', '$foto', '$veiculo', '$placa'");
+            $db->setDados("'$nome','$rg','$sexo','$cpf','$cidade','$uf','$telefone','$endereco','$cep','$bairro','$numero','$email', '$obs', '$foto'");
             // CHAMANDO A FUNCAO DE INSERSÃO NO BANCO DE DADOS
             $db->insert();
 

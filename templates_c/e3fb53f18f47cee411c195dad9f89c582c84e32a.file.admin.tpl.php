@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2015-08-13 23:24:29
+<?php /* Smarty version Smarty-3.1.13, created on 2016-11-24 14:45:20
          compiled from "./templates/admin/admin.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:112360652355392353e219a4-65599973%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'e3fb53f18f47cee411c195dad9f89c582c84e32a' => 
     array (
       0 => './templates/admin/admin.tpl',
-      1 => 1439519066,
+      1 => 1479910338,
       2 => 'file',
     ),
   ),
@@ -34,14 +34,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <?php if ($_valid && !is_callable('content_55392353e55523_12657043')) {function content_55392353e55523_12657043($_smarty_tpl) {?>
 <div id="admin">
     <div id="admin_texto">
-        Bem vindo ao sistema de cadastro de Hospedes da Pensão Genivaldo Geni.
+        Você entrou no sistema como Administrador.
     </div>
 
     <div class="col-xs-12">
         <div class="panel panel-primary">
 
             <div class="panel-heading">
-                <h2 class="panel-title">Hospedes Cadastrados</h2>
+                <h2 class="panel-title">Visitantes Cadastrados</h2>
             </div>
             <table class="table table-bordered table-hover table-responsive texto">
                 <?php if ($_smarty_tpl->tpl_vars['existe']->value=="SIM"){?> 
@@ -98,11 +98,11 @@ $_smarty_tpl->tpl_vars['smarty']->value['section']['a']['last']       = ($_smart
 )"><span class="glyphicon glyphicon-remove"></span> Desativar</a> </td>
                             </tr>
                         <?php endfor; else: ?>
-                            Não há hospedes cadastrados
+                            Não há visitantes cadastrados
                         <?php endif; ?>
                     <?php }?>
                     <?php if ($_smarty_tpl->tpl_vars['existe']->value=="NAO"){?>
-                        <td><strong>Não há hospedes cadastrados</strong></td>
+                        <td><strong>Não há visitantes cadastrados</strong></td>
                     <?php }?>
 
                 </table>

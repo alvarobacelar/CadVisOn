@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <title> Teste </title>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2" />
+
+        <!-- PHOTO_BOOTH -->
+        <meta name="description" content="Webcam Photo Booth made with ActionScript 3" />
+        <meta name="keywords" content="photo, photo booth, image, flash, actionscript," />
+
+       
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet"> 
+        <link href="lib/bootstrap-3.1.1-dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+        
+
+        <link rel="stylesheet" href="css/layout_.css" />
+        <link rel="stylesheet" href="css/login_.css" />
+        <link rel="stylesheet" href="css/geral_.css" />
+        <link rel="stylesheet" href="css/cad_visitante_.css" />
+        <link rel="stylesheet" href="css/admin_.css" />
+        <script src="bootstrap/js/bootstrap.js"></script>
+        <!-- JQUERY -->
+
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/ecmascript">  </script>
+
+
+        <link rel="SHORTCUT ICON" href="img/img-nav.jpg" />
+
+        <!--[if IE 6]>  
+            <script>
+                alert (Utilize outro navegador);
+            </script>
+        <![endif]--> 
+
+
+    </head>
+
+    <body>
+	
+
+		<script>
+			$(function(){
+			    $('#myModal').modal('show');
+			});		
+		</script>
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+			<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+		      </div>
+		      <div class="modal-body">
+			...
+		      </div>
+		      <div class="modal-footer">
+			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			<button type="button" class="btn btn-primary">Save changes</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+        
+
+                <div class="navbar navbar-default navbar-static-top" role="navigation">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" title="Home" href="index.php"><strong><span class="glyphicon glyphicon-home"></span> CadVisiOn</strong> <span style="font-size: 10px;"><mark>Beta</mark></span></a>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gerenciar Usuários <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="cadastra_novo.php" title="Cadastrar Novo Usuário"> Novo Usuário </a></li>
+                                        <li><a href="log_acesso.php" title="Cadastrar Novo Usuário"> Log de Acesso </a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="cad_visitado.php" title="Cadastrar Militar"> Cadastrar Militar </a></li>
+                                <li><a href="cad_visita.php" title="Cadastrar Visitante"> Cadastrar Visita </a></li>
+                                <li><a href="pessoas_cadastradas.php" title="Pessoas Cadastradas"> Pessoas Cadastradas </a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Relatorios de visita <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="gerarRelatorios.php?rel=diario" target="_blanck">Relatório Diário </a></li>
+                                        <li><a href="gerarRelatorios.php?rel=data"> Por Data </a></li>
+                                        <li><a href="gerarRelatorios.php?rel=nome"> Por Nome do Visitante</a></li>
+                                        <li><a href="gerarRelatorios.php?rel=visitado"> Por Nome do Visitado </a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <!-- MENU NA DIREITA
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#">Link</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            -->
+                        </div><!-- /.navbar-collapse -->
+                    </div><!-- /.container-fluid -->
+                </nav>
+
+            </div>
+            
+
+        <div id="tudo">
+
+                <div id="status">Voce está em</div>
+           
+
+            
+                <div id="logado"><span class="glyphicon glyphicon-user"></span> Seja bem vindo, <span class="login"> {$login} </span> <a class="btn btn-danger btn-xs" href="include/funcoes/logaut.php"><span class="glyphicon glyphicon-off"></span> Sair</a></div>
+            
+
+
+            <div id="conteudo">
+                
+            </div>
+
+            <div id="clear"></div> 
+
+        </div> 
+
+
+        <div id="rodapeHome">
+            © CadVisiOn - Cadastro de Visitantes Online |  <a href="#"> Politica de Privacidade </a> | <a href="#"> Termo de Uso </a> | <a href="fale_conosco.php"> Fale Conosco </a>
+            <p>
+                Desenvolvido por - <a href="http://www.alvarobacelar.com" target="_blank">Sgt Álvaro</a> | Seção de Informática 25ºBC<br>
+                Versão 2.0
+            </p>
+        </div>
+
+        
+
+    </body>
+</html>

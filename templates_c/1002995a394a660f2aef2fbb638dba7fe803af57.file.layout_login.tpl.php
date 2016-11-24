@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2015-05-05 16:38:50
+<?php /* Smarty version Smarty-3.1.13, created on 2016-11-24 14:56:07
          compiled from "/home/www/html/cadvision/templates/layout_login.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:206281779555392355cbcba4-90982654%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '1002995a394a660f2aef2fbb638dba7fe803af57' => 
     array (
       0 => '/home/www/html/cadvision/templates/layout_login.tpl',
-      1 => 1430848861,
+      1 => 1479910210,
       2 => 'file',
     ),
   ),
@@ -79,7 +79,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             © CadVisiOn - Cadastro de Visitantes Online |  <a href="#"> Politica de Privacidade </a> | <a href="#"> Termo de Uso </a> | <a href="fale_conosco.php"> Fale Conosco </a>
             <p>
                 Desenvolvido por - <a href="http://www.alvarobacelar.com" target="_blank">Sgt Álvaro</a> | Seção de Informática 25ºBC<br>
-                Versão 2.0.1
+                Versão 2.0
             </p>
         </div>
 

@@ -15,7 +15,7 @@
                         <td width="150" style="text-align: center;">
                             <form name="visita" method="POST" action="include/controlles/verifica_vis.php">
                                 <input type="hidden" id="cpfVerifica" name="cpfVerifica" value="{$pessoa->cpf}" /> 
-                                <button type="submit" name="enviaCPF" class="btn bnt-lg btn-success"><span class="glyphicon glyphicon-edit"></span> Cadastrar hospedagem</button></a>
+                                <button type="submit" name="enviaCPF" class="btn bnt-lg btn-success"><span class="glyphicon glyphicon-edit"></span> Cadastrar Visita</button></a>
                             </form>
                         </td>
                     </tr>
@@ -26,4 +26,4 @@
         </table>
     </fieldset>
 </div>
-<center><a class="btn btn-default" href="javascript:history.back()"><span class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"></span> Voltar</a></center> <br /><br />
+<center><a class="btn btn-default" href="javascript:history.back()">Voltar</a></center> <br /><br />

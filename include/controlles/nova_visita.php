@@ -10,8 +10,6 @@ $idPessoa = $_SESSION["id_pessoa"];
 $quemVis = trim(addslashes($_POST['quemVis']));
 $obs = trim(addslashes($_POST['obs']));
 $cracha = trim(addslashes($_POST['cracha']));
-$veiculo = trim(addslashes($_POST['veiculo']));
-$placa = trim(addslashes($_POST['placa']));
 
 
 if (isset($quemVis) && isset($obs)) {
@@ -21,8 +19,6 @@ if (isset($quemVis) && isset($obs)) {
     $novaVisita->setVisita("quemVis", $quemVis);
     $novaVisita->setVisita("obs", $obs);
     $novaVisita->setVisita("cracha", $cracha);
-    $novaVisita->setVisita("veiculo", $veiculo);
-    $novaVisita->setVisita("placa", $placa);
 
 // CHAMA A FUNCAO DE CADASTRO DE VISITA DEPOIS DE TER RECEBIDO TODOS OS PARAMETROS
     $novaVisita->cadNovaVisita();

@@ -18,8 +18,6 @@ $cep = addslashes($_POST["cep"]);
 $bairro = addslashes($_POST["bairro"]);
 $numero = addslashes($_POST["numero"]);
 $observacao = addslashes($_POST["mensagem"]);
-$veiculo = addslashes($_POST['veiculo']);
-$placa = addslashes($_POST['placa']);
 
 $cpf = $update->somenteNumeros($cpf);
 
@@ -33,7 +31,7 @@ if (!isset($_SESSION["filename"])){
 
 
 $update->setTable("pessoa");
-$update->setCamposBanco("nome='$nome', rg='$rg', sexo='$sexo', cpf='$cpf', cidade='$cidade', uf='$uf', telefone='$telefone', endereco='$endereco', cep='$cep', bairro='$bairro', numero='$numero', obs='$observacao', foto='$foto', veiculo='$veiculo', placa='$placa'");
+$update->setCamposBanco("nome='$nome', rg='$rg', sexo='$sexo', cpf='$cpf', cidade='$cidade', uf='$uf', telefone='$telefone', endereco='$endereco', cep='$cep', bairro='$bairro', numero='$numero', obs='$observacao', foto='$foto'");
 $update->setCampoTable("id_pessoa");
 $update->setValueId($idPessoa);
 

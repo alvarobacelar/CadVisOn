@@ -102,7 +102,7 @@ class ManipulateData extends Conectar {
     
     // selecionando todos os visitados cadastrados
     public function selectVisitados(){
-        $this->sql = $this->query("SELECT * FROM visitado WHERE status = 1 ORDER BY visitado_nome");
+        $this->sql = $this->query("SELECT visitado_nome FROM visitado WHERE status = 1 ORDER BY visitado_nome");
     }
     
     /**
@@ -143,28 +143,28 @@ class ManipulateData extends Conectar {
     }
 
     public function gerarRelatorioData($dataInicial, $dataFinal) {
-        $this->sql = $this->query("SELECT visita.visitante_data, visita.visitante_hora, visita.visita_saida, visita.visitante_quem_vis, visita.visitante_obs, visita.status, pessoa.nome, pessoa.foto, visita.veiculo, visita.placa FROM visita, pessoa
+        $this->sql = $this->query("SELECT visita.visitante_data, visita.visitante_hora, visita.visita_saida, visita.visitante_quem_vis, visita.visitante_obs, visita.status, pessoa.nome, pessoa.foto FROM visita, pessoa
                                     WHERE visita.id_pessoa = pessoa.id_pessoa
                                     AND visita.visitante_data BETWEEN ('$dataInicial') AND ('$dataFinal')
                                     ORDER BY visita.id_visita;");
     }
 
     public function gerarRelatorioNome($nome) {
-        $this->sql = $this->query("SELECT visita.visitante_data, visita.visitante_hora, visita.visita_saida, visita.visitante_quem_vis, visita.visitante_obs, visita.status, pessoa.nome, pessoa.foto, visita.veiculo, visita.placa FROM visita, pessoa
+        $this->sql = $this->query("SELECT visita.visitante_data, visita.visitante_hora, visita.visita_saida, visita.visitante_quem_vis, visita.visitante_obs, visita.status, pessoa.nome, pessoa.foto FROM visita, pessoa
                                     WHERE visita.id_pessoa = pessoa.id_pessoa
                                     AND pessoa.nome like '%$nome%'
                                     ORDER BY visita.id_visita;");
     }
 
     public function gerarRelatorioDiario($data) {
-        $this->sql = $this->query("SELECT visita.visitante_data, visita.visitante_hora, visita.visita_saida, visita.visitante_quem_vis, visita.visitante_obs, visita.status, pessoa.nome, pessoa.foto, visita.veiculo, visita.placa FROM visita, pessoa
+        $this->sql = $this->query("SELECT visita.visitante_data, visita.visitante_hora, visita.visita_saida, visita.visitante_quem_vis, visita.visitante_obs, visita.status, pessoa.nome, pessoa.foto FROM visita, pessoa
                                     WHERE visita.id_pessoa = pessoa.id_pessoa
                                     AND visita.visitante_data = '$data'
                                     ORDER BY visita.id_visita;");
     }
 
     public function gerarRelatorioNomeVis($nome) {
-        $this->sql = $this->query("SELECT visita.visitante_data, visita.visitante_hora, visita.visita_saida, visita.visitante_quem_vis, visita.visitante_obs, pessoa.nome, pessoa.foto, visita.veiculo, visita.placa FROM visita, pessoa
+        $this->sql = $this->query("SELECT visita.visitante_data, visita.visitante_hora, visita.visita_saida, visita.visitante_quem_vis, visita.visitante_obs, pessoa.nome, pessoa.foto FROM visita, pessoa
                                     WHERE visita.id_pessoa = pessoa.id_pessoa
                                     AND visita.visitante_quem_vis like '%$nome%'
                                     ORDER BY visita.id_visita;");

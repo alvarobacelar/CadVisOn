@@ -48,7 +48,7 @@
                 .table-hover tbody tr.info:hover td{background-color:#c4e3f3;}
                 .well{min-height:10px;padding:5px;margin-bottom:15px;background-color:#f5f5f5;border:1px solid #e3e3e3;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;-webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.05);-moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.05);box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.05);}
                 .well blockquote{border-color:#ddd;border-color:rgba(0, 0, 0, 0.15);}
-                .well-large{padding:20px;-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px;}
+                .well-large{padding:40px;-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px;}
                 .well-small{padding:5px;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;}
             </style>
         {/literal}    
@@ -56,7 +56,7 @@
     <body>
         <div class="well well-small">
             <h3>
-                Relatório de hospedagem diário do dia: {$pesquisa}
+                Relatório de visita diário do dia: {$pesquisa}
             </h3>
         </div>
         {if isset($id)}
@@ -64,7 +64,6 @@
                 <tr>
                     <th><center>Foto</center></th>
                     <th><center>Nome do Visitante</center></th>
-                    <th><center>Veículo</center></th>
                     <th><center>Data Hora Chegada</center></th>
                     <th><center>Data Hora Saída</center></th>
                     <th><center>Quem visitou</center></th>
@@ -75,7 +74,6 @@
     <tr>
         <td width="100"><img src="{$foto[rel]}" width="100" /></td>
         <td width="200">{$nome[rel]}</td>
-        <td width="90">{if $veiculo[rel] != ""}{$veiculo[rel]} <br /> {$placa[rel]}{else} <span style="font-size:11px;"><i>Sem Veículo</i></span> {/if}</td>
         <td width="60" style="text-align: center;">{$data[rel]}  {$hora[rel]}</td>
         <td width="70" style="text-align: center;">{$data[rel]} {if $status[rel] == 0} {$saida[rel]} {else} Visitante Online {/if}</td>
         <td width="100">{$quemVis[rel]}</td>
@@ -88,7 +86,7 @@
 {else}
     <table class="table table-bordered table-hover">
         <tr>
-            <td><center><h2>Nenhum hospede cadastrado hoje.</h2></center></td>
+            <td><center><h2>Nenhum visitante cadastrado nessa data.</h2></center></td>
 </tr>
 </table>
 

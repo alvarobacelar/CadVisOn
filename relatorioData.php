@@ -34,8 +34,6 @@ if (isset($_POST["relData1"]) && ($_POST["relData2"])) {
         $observacao[] = $rel->visitante_obs;
         $nome[] = $rel->nome;
         $status[] = $rel->status;
-        $veiculo[] = $rel->veiculo;
-        $placa[] = $rel->placa;
         
         $smarty->assign("idVisita", $idVisita);
         $smarty->assign("hora", $hora);
@@ -46,8 +44,6 @@ if (isset($_POST["relData1"]) && ($_POST["relData2"])) {
         $smarty->assign("quemVis", $quemVis);
         $smarty->assign("observacao", $observacao);
         $smarty->assign("status", $status);
-        $smarty->assign("veiculo", $veiculo);
-        $smarty->assign("placa", $placa);
         
     }
     $smarty->assign("dataInicial", $dataInicial);

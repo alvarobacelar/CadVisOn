@@ -15,11 +15,11 @@
             <!--<a href="javascript:void(0)" onclick="javascript: mostra();" id="webcam" class="btn btn-inverse" title="Capturar Foto"><i class="icon-camera icon-white"></i> Capturar Foto</a><br /><br />-->
 
             Nome*<br>
-            <input name="nome" id="nome" type="text" size="50" value="" required="" autocomplete="on" placeholder="Nome da pessoa..." /><p/>
+            <input name="nome" id="nome" type="text" maxlength="150" size="50" value="" required="" autocomplete="on" placeholder="Nome da pessoa..." /><p/>
 
             <div class="form-group">
                 RG*<br>
-                <input type="text" id="rg" name="rg"  size="25" value=""  required="" autocomplete="on" placeholder="RG..."/><br />
+                <input type="text" id="rg" name="rg"  size="25" maxlength="14" value=""  required="" autocomplete="on" placeholder="RG..."/><br />
             </div>
 
             <div class="form-group">
@@ -36,7 +36,7 @@
 
             <div class="form-group">
                 Cidade*<br>
-                <input type="text" name="cidade" size="30" value="" required="" autocomplete="on" placeholder="Cidade..."/>
+                <input type="text" name="cidade" size="30" maxlength="50" value="" required="" autocomplete="on" placeholder="Cidade..."/>
             </div>
 
             <div class="form-group">
@@ -68,24 +68,18 @@
                 </select>
             </div><br />
 
-            Veículo<br>
-            <input type="text" id="veiculo" name="veiculo" autocomplete="on" maxlength="15"  placeholder="Ex: Chevrolet Celta"/><p />
-            
-            Placa<br>
-            <input type="text" id="placa" name="placa" autocomplete="on" maxlength="15"  placeholder="Ex: XXX-0000"/><p />
-            
-            Telefone<br>
-            <input type="text" id="telefone" name="telefone" autocomplete="on" maxlength="15"  placeholder="Telefone..."/><p />
+            Telefone*<br>
+            <input type="text" id="telefone" name="telefone" size="26" autocomplete="on" required="" maxlength="15"  placeholder="Telefone..."/><p />
 
             Endereço<br>
-            <input type="text" name="endereco" size="50" autocomplete="on" placeholder="Endereço (Ex: logradouro, rua, Av..)" /><p/>
+            <input type="text" name="endereco" size="50" maxlength="100"  autocomplete="on" placeholder="Endereço (Ex: logradouro, rua, Av..)" /><p/>
 
             CEP<br>
-            <input type="text" name="cep" size="20" size="40px"  autocomplete="on" onBlur="ValidaCep(dados.cep)" onKeyPress="MascaraCep(dados.cep);" placeholder="CEP" /><p/>
+            <input type="text" name="cep" size="20" size="40px" maxlength="10" autocomplete="on" onBlur="ValidaCep(dados.cep)" onKeyPress="MascaraCep(dados.cep);" placeholder="CEP" /><p/>
 
             <div class="form-group">
                 Bairro<br />
-                <input type="text" name="bairro" size="30" size="40px" autocomplete="on" placeholder="Bairro..."/>
+                <input type="text" name="bairro" size="30" maxlength="30" size="40px" autocomplete="on" placeholder="Bairro..."/>
             </div>
 
             <div class="form-group">
@@ -94,7 +88,7 @@
             </div><br />
 
             Email<br>
-            <input name="email" type="email" id="email" size="40" class="formbutton"  autocomplete="on" placeholder="email@exemplo.com.br"/><p/>
+            <input name="email" type="email" id="email" size="40" maxlength="150" class="formbutton"  autocomplete="on" placeholder="email@exemplo.com.br"/><p/>
             <label>
                 <span class="obs">Observação</span> <br />
                 <textarea name="mensagem"> </textarea>

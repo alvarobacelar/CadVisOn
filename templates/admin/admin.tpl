@@ -1,14 +1,14 @@
 
 <div id="admin">
     <div id="admin_texto">
-        Bem vindo ao sistema de cadastro de Hospedes da Pensão Genivaldo Geni.
+        Você entrou no sistema como Administrador.
     </div>
 
     <div class="col-xs-12">
         <div class="panel panel-primary">
 
             <div class="panel-heading">
-                <h2 class="panel-title">Hospedes Cadastrados</h2>
+                <h2 class="panel-title">Visitantes Cadastrados</h2>
             </div>
             <table class="table table-bordered table-hover table-responsive texto">
                 {if $existe == "SIM"} {*VERIFICA DE EXISTE VISITANTES CADASTRADOS*}
@@ -32,11 +32,11 @@
                             <td width="50"> <a class="btn btn-xs btn-danger" onclick="desativarVisita({$idVis[a]})"><span class="glyphicon glyphicon-remove"></span> Desativar</a> </td>
                             </tr>
                         {sectionelse}
-                            Não há hospedes cadastrados
+                            Não há visitantes cadastrados
                         {/section}
                     {/if}
                     {if $existe == "NAO"}
-                        <td><strong>Não há hospedes cadastrados</strong></td>
+                        <td><strong>Não há visitantes cadastrados</strong></td>
                     {/if}
 
                 </table>

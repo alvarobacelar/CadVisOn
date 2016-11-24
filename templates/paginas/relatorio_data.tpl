@@ -63,7 +63,6 @@
             <tr>
                 <th><center>Foto</center></th>
                 <th><center>Nome Visitante</center></th>
-                <th><center>Veículo</center></th>
                 <th><center>Data Hora Chegada</center></th>
                 <th><center>Data Hora Saída</center></th>
                 <th><center>Quem visitou</center></th>
@@ -74,7 +73,6 @@
                 <tr>  
                     <td width="100"><img src="{$foto[rel]}" width="100" /></td>
                     <td width="200">{$nome[rel]}</td>
-                    <td width="90">{if $veiculo[rel] != ""}{$veiculo[rel]} <br /> {$placa[rel]}{else} <span style="font-size:11px;"><i>Sem Veículo</i></span> {/if}</td>
                     <td width="60" style="text-align: center;">{$data[rel]}  {$hora[rel]}</td>
                     <td width="60" style="text-align: center;">{$data[rel]} {if $status[rel] == 0} {$saida[rel]} {else} Visitante Online {/if}</td>
                     <td width="100">{$quemVis[rel]}</td>

@@ -31,8 +31,6 @@ while ($rel = $relatorio->fetch_object()) {
     $quemVis[] = $rel->visitante_quem_vis;
     $observacao[] = $rel->visitante_obs;
     $status[] = $rel->status;
-    $veiculo[] = $rel->veiculo;
-    $placa[] = $rel->placa;
 
     $smarty->assign("id", $id);
     $smarty->assign("hora", $hora);
@@ -43,8 +41,6 @@ while ($rel = $relatorio->fetch_object()) {
     $smarty->assign("observacao", $observacao);
     $smarty->assign("saida", $saida);
     $smarty->assign("status", $status);
-    $smarty->assign("veiculo", $veiculo);
-    $smarty->assign("placa", $placa);
 }
 
 //            $smarty->display('paginas/relatorio.tpl');

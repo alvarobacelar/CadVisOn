@@ -54,8 +54,6 @@ class VerificaVisitante extends Conectar {
 
                 $_SESSION["id_pessoa"] = $obj->id_pessoa;
                 $_SESSION["nomePessoa"] = $obj->nome;
-                $_SESSION["endereco"] = $obj->endereco;
-                $_SESSION["cidade"] = $obj->cidade;
                 $_SESSION["filename"] = $obj->foto;
                 header("location: ../../cad_visita.php");
                 exit();

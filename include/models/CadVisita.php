@@ -18,8 +18,6 @@ class CadVisita {
     private $obs;
     private $idPessoa;
     private $cracha;
-    private $veiculo;
-    private $placa;
 
     function setVisita($prop, $valor) {
         $this->$prop = $valor;
@@ -37,16 +35,13 @@ class CadVisita {
         $idPessoa = $this->idPessoa;
         $status = 1;
         $cracha = $this->cracha;
-        $veiculo = $this->veiculo;
-        $placa = $this->placa;
-        
 
         // SETANDO A TABELA A SER FEITA A INSERÇÃO
         $novVis->setTable("visita");
         // SETANDO OS VALORES DO BANCO DE DADOS
-        $novVis->setCamposBanco("visitante_data, visitante_hora, visitante_quem_vis, visitante_obs, id_pessoa, status, cracha, veiculo, placa");
+        $novVis->setCamposBanco("visitante_data, visitante_hora, visitante_quem_vis, visitante_obs, id_pessoa, status, cracha");
         // SETANDO OS DADOS A SEREM ADICIONADOS AO BANCO DE DADOS
-        $novVis->setDados("'$data', '$hora', '$quemVis', '$obs', '$idPessoa', '$status', $cracha, '$veiculo', '$placa'");
+        $novVis->setDados("'$data', '$hora', '$quemVis', '$obs', '$idPessoa', '$status', $cracha");
         // CHAMANDO A FUNCAO DE INSERÇAO NO BANCO DE DADOS
         $novVis->insert();
 

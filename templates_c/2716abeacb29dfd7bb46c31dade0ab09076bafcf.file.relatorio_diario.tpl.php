@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2015-05-07 20:05:21
+<?php /* Smarty version Smarty-3.1.13, created on 2016-11-24 14:56:33
          compiled from "/home/www/html/cadvision/templates/paginas/relatorio_diario.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:12425227655539aee0bb8085-35123021%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '2716abeacb29dfd7bb46c31dade0ab09076bafcf' => 
     array (
       0 => '/home/www/html/cadvision/templates/paginas/relatorio_diario.tpl',
-      1 => 1431025518,
+      1 => 1479910324,
       2 => 'file',
     ),
   ),
@@ -23,8 +23,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'id' => 0,
     'foto' => 0,
     'nome' => 0,
-    'veiculo' => 0,
-    'placa' => 0,
     'data' => 0,
     'hora' => 0,
     'status' => 0,
@@ -101,7 +99,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                 <tr>
                     <th><center>Foto</center></th>
                     <th><center>Nome do Visitante</center></th>
-                    <th><center>Veículo</center></th>
                     <th><center>Data Hora Chegada</center></th>
                     <th><center>Data Hora Saída</center></th>
                     <th><center>Quem visitou</center></th>
@@ -137,9 +134,6 @@ $_smarty_tpl->tpl_vars['smarty']->value['section']['rel']['last']       = ($_sma
 " width="100" /></td>
         <td width="200"><?php echo $_smarty_tpl->tpl_vars['nome']->value[$_smarty_tpl->getVariable('smarty')->value['section']['rel']['index']];?>
 </td>
-        <td width="90"><?php if ($_smarty_tpl->tpl_vars['veiculo']->value[$_smarty_tpl->getVariable('smarty')->value['section']['rel']['index']]!=''){?><?php echo $_smarty_tpl->tpl_vars['veiculo']->value[$_smarty_tpl->getVariable('smarty')->value['section']['rel']['index']];?>
- <br /> <?php echo $_smarty_tpl->tpl_vars['placa']->value[$_smarty_tpl->getVariable('smarty')->value['section']['rel']['index']];?>
-<?php }else{ ?> <span style="font-size:11px;"><i>Sem Veículo</i></span> <?php }?></td>
         <td width="60" style="text-align: center;"><?php echo $_smarty_tpl->tpl_vars['data']->value[$_smarty_tpl->getVariable('smarty')->value['section']['rel']['index']];?>
   <?php echo $_smarty_tpl->tpl_vars['hora']->value[$_smarty_tpl->getVariable('smarty')->value['section']['rel']['index']];?>
 </td>

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2015-08-13 23:03:54
+<?php /* Smarty version Smarty-3.1.13, created on 2016-11-24 14:56:46
          compiled from "./templates/paginas/pessoas-cadastradas.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:16094698605539a888c746f9-89334897%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'c31dd21e740df4408b5690649a805eb1925ddc67' => 
     array (
       0 => './templates/paginas/pessoas-cadastradas.tpl',
-      1 => 1439515054,
+      1 => 1479910328,
       2 => 'file',
     ),
   ),
@@ -23,9 +23,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'cadastro' => 0,
     'nome' => 0,
     'foto' => 0,
-    'identidade' => 0,
     'cidade' => 0,
-    'estado' => 0,
     'telefone' => 0,
     'id' => 0,
     'cpf' => 0,
@@ -46,7 +44,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     <div class="table-responsive table-bordered">
         <table class="table table-bordered  table-responsive texto">
             <?php if (isset($_smarty_tpl->tpl_vars['nome']->value)){?>
-                <th><center>Foto</center></th><th><center>Nome</center></th><th><center>Identidade</center></th><th><center>Cidade</center></th><th><center>Telefone</center></th><th><center>Opção</center></th>
+                <th><center>Foto</center></th><th><center>Nome</center></th><th><center>Cidade</center></th><th><center>Telefone</center></th><th><center>Opção</center></th>
 
                 <?php if (isset($_smarty_tpl->tpl_vars['smarty']->value['section']['a'])) unset($_smarty_tpl->tpl_vars['smarty']->value['section']['a']);
 $_smarty_tpl->tpl_vars['smarty']->value['section']['a']['name'] = 'a';
@@ -79,10 +77,7 @@ $_smarty_tpl->tpl_vars['smarty']->value['section']['a']['last']       = ($_smart
 " width="150" /></td>
                         <td><?php echo $_smarty_tpl->tpl_vars['nome']->value[$_smarty_tpl->getVariable('smarty')->value['section']['a']['index']];?>
 </td>
-                        <td><?php echo $_smarty_tpl->tpl_vars['identidade']->value[$_smarty_tpl->getVariable('smarty')->value['section']['a']['index']];?>
-</td>
                         <td><?php echo $_smarty_tpl->tpl_vars['cidade']->value[$_smarty_tpl->getVariable('smarty')->value['section']['a']['index']];?>
--<?php echo $_smarty_tpl->tpl_vars['estado']->value[$_smarty_tpl->getVariable('smarty')->value['section']['a']['index']];?>
 </td>
                         <td><?php echo $_smarty_tpl->tpl_vars['telefone']->value[$_smarty_tpl->getVariable('smarty')->value['section']['a']['index']];?>
 </td>
@@ -93,7 +88,7 @@ $_smarty_tpl->tpl_vars['smarty']->value['section']['a']['last']       = ($_smart
                             <form name="visita" method="POST" action="include/controlles/verifica_vis.php">
                                 <input type="hidden" id="cpfVerifica" name="cpfVerifica" value="<?php echo $_smarty_tpl->tpl_vars['cpf']->value[$_smarty_tpl->getVariable('smarty')->value['section']['a']['index']];?>
 " /> 
-                                <button type="submit" name="enviaCPF" class="btn btn-xs btn-success"><span class="glyphicon glyphicon-ok-circle"></span> Cadastrar hospedagem</button></a>
+                                <button type="submit" name="enviaCPF" class="btn btn-xs btn-success"><span class="glyphicon glyphicon-ok-circle"></span> Cadastrar Visita</button></a>
                             </form>
                         </td>
                     </tr>
@@ -105,4 +100,4 @@ $_smarty_tpl->tpl_vars['smarty']->value['section']['a']['last']       = ($_smart
         </fieldset>
     </div>
 </div>
-<center><a class="btn btn-default" href="javascript:history.back()"><span class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"></span> Voltar</a></center> <br /><br /><?php }} ?>
+<center><a class="btn btn-default" href="javascript:history.back()">Voltar</a></center> <br /><br /><?php }} ?>
