@@ -26,11 +26,11 @@
 
         <link rel="SHORTCUT ICON" href="img/img-nav.jpg" />
 
-        <!--[if IE 6]>  
+        <!--[if IE 6]>
             <script>
                 alert (Utilize outro navegador);
             </script>
-        <![endif]--> 
+        <![endif]-->
 
 
     </head>
@@ -67,7 +67,7 @@
                                         <li><a href="log_acesso.php" title="Cadastrar Novo Usuário"> Log de Acesso </a></li>
                                     </ul>
                                 </li>
-                                <li><a href="cad_visitado.php" title="Cadastrar Militar"> Cadastrar Militar </a></li>
+                                <li><a href="cad_visitado.php" title="Cadastrar Militar"> Cadastrar Funcionário </a></li>
                                 <li><a href="cad_visita.php" title="Cadastrar Visitante"> Cadastrar Visita </a></li>
                                 <li><a href="pessoas_cadastradas.php" title="Pessoas Cadastradas"> Pessoas Cadastradas </a></li>
                                 <li class="dropdown">
@@ -102,7 +102,7 @@
             </div>
             <!--
 
-            
+
                 <div id="container navbar-wrapper">
                     <div class="navbar navbar-inverse">
                         <div class="navbar-inner">
